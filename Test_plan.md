@@ -53,11 +53,11 @@ In this testing cycle , we will cover tests for:
 
 ### 1.4 Schedule  
 ```markdown
-| Phase              | Time (days) | Start/End Time        |  
-|--------------------|-------------|-----------------------|  
-| Test Planning      | 2           | 26-06-2025	02-07-2025 |  
-| Test Design        | 4           |	03-07-2025	09-07-2025 |  
-| Test Execution     | 6           | 10-07-2025	16-07-2025 | 
+| Phase              | Time (days) | Start/End Time          |  
+|--------------------|-------------|-------------------------|  
+| Test Planning      | 2           | 26-06-2025	- 02-07-2025 |  
+| Test Design        | 4           |	03-07-2025	- 09-07-2025 |  
+| Test Execution     | 6           | 10-07-2025	- 16-07-2025 | 
 
 
 
