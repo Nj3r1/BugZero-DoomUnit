@@ -5,9 +5,9 @@
 
 |        NAME         |               EMAIL                |         ROLE            |
 |---------------------|------------------------------------|-------------------------|
-| Antony Manyenze     | anmanyenze@gmail.com               | Junior Software Tester  |
-| Susan Njeri         | susanjeri4717@gmail.com            | Junior Software Tester  |
-| Teresiah Waweru     | tessywaweru.06@gmail.com           | Junior Software Tester  |
+| Antony Manyenze     | anmanyenze@gmail.com               | QA Lead                 |
+| Susan Njeri         | susanjeri4717@gmail.com            | QA Analyst 1            |
+| Teresiah Waweru     | tessywaweru.06@gmail.com           | QA Analyst 2            |
 
 ---
 
