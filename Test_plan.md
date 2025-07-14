@@ -45,10 +45,10 @@ In this testing cycle , we will cover tests for:
 
 ### 1.3 Resources  
 ```markdown 
--**Jira**: (test management)
--**Selenium**: (automated browser testing)
--**Dev Tools**: (manual inspection and debugging)
--**Chrome Browser**
+-Jira: (test management)
+-Selenium: (automated browser testing)
+-Dev Tools: (manual inspection and debugging)
+-Chrome Browser
 ```
 
 ### 1.4 Schedule  
@@ -65,7 +65,7 @@ In this testing cycle , we will cover tests for:
 
 ### 1.5 Entry/Exit Criteria  
 ```markdown
-| **Entry Criteria**                                                  | **Exit Criteria**                      |  
+| **Entry Criteria**                                                  | **Exit Criteria**                                                             |  
 |---------------------------------------------------------------------|-------------------------------------------------------------------------------|  
 |Basic smoke tests of critical functionalities pass successfull       | All critical and high-priority bugs are fixed and verified.                   | 
 |All core modules (route optimization, task assignment,               | Minimum 90% of planned test cases are executed, with 85% passing rate.        |
@@ -196,33 +196,7 @@ pie
 
 ---
 
-## 💭 **5. Reflection**  
 
-
-### 5.1 Test Approach Changes  
-```markdown
-Risk analysis fundamentally changed my test approach by enabling **prioritization**. Instead of a flat, exhaustive testing effort, I focused my limited time on areas that posed the greatest threat to the game's core functionality and user experience. This meant dedicating more test cases and more thorough execution to the **scoring system and hint mechanics**, as these were identified as "Critical" or "High" priority risks. It also highlighted the need for specific test cases for known potential issues like the score not resetting.
-
-```
-
-### 5.2 Coverage vs Time Trade-offs  
-```markdown
-| **Decision**                                   | **Rationale**                                                           |
-|------------------------------------------------|-------------------------------------------------------------------------|
-| Skipped cross-browser testing                  | Limited time, Chrome covered 80% user base (assumption)                 |
-| Limited automated testing                      | Manual testing faster for initial small features                        |
-| Focused on functional/logic over UI aesthetics | Core game mechanics prioritized due to higher risk impact               |
-| Limited exploratory testing                    | Primarily used to validate existing test cases, not for broad discovery |
-
-```
-
-### 5.3 Lessons Learned  
-```markdown
-
-1. Risk analysis is crucial for efficiency: It directed my efforts to the most impactful areas, preventing wasted time on low-priority features.
-2. Even simple features can hide complex bugs: The score accumulation bug (TC-02) and Rapid consecutive submissions (TC-04) highlight that even seemingly straightforward logic requires careful testing.
-3. The importance of clear entry/exit criteria: These help define when testing phases are complete and provide objective measures of progress.
-4. DevTools are invaluable: Rapid inspection of variables and console output significantly sped up test execution and defect identification.
 
 ```
 
