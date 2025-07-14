@@ -26,7 +26,7 @@ In this testing cycle , we will cover tests for:
 ---
 
 
-** Scope**
+**Scope**
 
  In scope:
 
@@ -81,40 +81,62 @@ Legal compliance audits
 ---
 
  **Resources**
+
 Jira  (test management)
+
 Selenium (automated browser testing)
+
 Dev Tools (manual inspection and debugging)
+
 Chrome Browser
 
 ---
 
 
 ### **Schedule**
+
 Phase	Start Date	End Date
+
 Phase 1: Test Planning	26-06-2025	02-07-2025
+
 Phase 2: Test Design	03-07-2025	09-07-2025
+
 Phase 3: Test Execution	10-07-2025	16-07-2025
 
 
 ---
+
 **Test Entry/Exit Criteria**
 Entry:
+
 Feature complete
+
 Test environment ready
 
 Exit:
+
 No Critical/High bugs open
-regression passed
-stakeholder sign-off
+
+Regression passed
+
+Stakeholder sign-off
 
 ---
- ### **Testing Types**
+
+ **Testing Types**
+
 Unit Testing: Focused on JavaScript modules and DOM interactions.
+
 System Testing: Evaluates end-to-end functionality.
+
 Accessibility Testing: Ensures compliance with WCAG standards.
+
 Security Testing: Input validation, authentication flaws, and session safety.
+
 Cross-Browser & Device Testing: Chrome, Safari, Firefox (mobile & desktop).
----
+
+
+
 
         
- #
+ 
