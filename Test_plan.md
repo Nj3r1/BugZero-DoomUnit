@@ -77,10 +77,15 @@ In this testing cycle , we will cover tests for:
 
 ```
 ### **Testing Types**
+
 Unit Testing: Focused on JavaScript modules and DOM interactions.
+
 System Testing: Evaluates end-to-end functionality.
+
 Accessibility Testing: Ensures compliance with WCAG standards.
+
 Security Testing: Input validation, authentication flaws, and session safety.
+
 Cross-Browser & Device Testing: Chrome, Safari, Firefox (mobile & desktop).
 
 
