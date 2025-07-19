@@ -47,3 +47,18 @@ Focus Area: Manual Testing, Exploratory Testing, and UI/UX Validation
 .Cross-Platform UI/UX Verification: Validate the application's responsiveness and visual integrity across a range of browsers (Chrome, Edge) and device types (Android mobile, desktop). Confirm the correct functioning of navigation elements, input fields, error messaging, and system notifications.
 
 .Test Data Lifecycle Management: Prepare, organize, and maintain all necessary test data sets required for the execution of manual test cases .
+
+---
+
+Team Collaboration
+
+.Ensuring Quality & Accountability: Peer reviews and collaborative documentation practices are employed to ensure shared accountability and enhance     transparency throughout the testing process.
+
+.Collective Test Lifecycle Engagement: All team members actively participate in the design, execution, and review phases of test cases.
+
+.Standardized Task Progression: A consistent Jira workflow (To Do → In Progress → In Review → Done) governs the progression of all tasks.
+
+.Integrated Issue Management: Jira is utilized as the primary tool for collaborative tracking and management of all identified issues and defects.
+
+.Structured Communication Channels: Communication is maintained through regular weekly meetings and comprehensive Jira comment threads.
+
