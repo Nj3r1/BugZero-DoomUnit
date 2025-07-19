@@ -1,4 +1,4 @@
-# CleanCity QA Project – Team Roles and Responsibilities
+# 2.CleanCity QA Project – Team Roles and Responsibilities
 
 This document outlines the responsibilities of each QA team member in the CleanCity – Waste Pickup Scheduler testing project.It ensures that all aspects of functional and non-functional testing, from planning to execution and reporting, are explicitly assigned and understood.
 
