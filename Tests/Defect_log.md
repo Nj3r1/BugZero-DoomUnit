@@ -1,5 +1,3 @@
- Defect Log Summary Table
-
 ## 3.Defect Log Summary Table
 
 | Defect ID | Defect Title/Summary                                               | Feature               | Sub-Feature               | Severity | Priority | Status | Reported By            | Date Reported | 
