@@ -1,14 +1,4 @@
 **1. Test Plan**
-
----
-**TEAM MEMBERS**
-
-|        NAME         |               EMAIL                |         ROLE            |
-|---------------------|------------------------------------|-------------------------|
-| Antony Manyenze     | anmanyenze@gmail.com               | QA Lead                 |
-| Susan Njeri         | susanjeri4717@gmail.com            | QA Analyst 1            |
-| Teresiah Waweru     | tessywaweru.06@gmail.com           | QA Analyst 2            |
-
 ---
 
 
