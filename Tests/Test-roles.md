@@ -20,7 +20,7 @@ Focus Area: Test Planning, Defect Management, and Compliance
 
 ---
 
-QA Specialist-Susan Ng'ang'a
+QA Analyst-Susan Ng'ang'a
 
 Focus Area: Test Automation, Regression Testing, and CI/CD
 
@@ -34,7 +34,7 @@ Cross-Functional Debugging: Collaborate closely with development teams to diagno
 
 ---
 
-QA Specialist-Teresiah Waweru
+QA Analyst-Teresiah Waweru
 
 Focus Area: Manual Testing, Exploratory Testing, and UI/UX Validation
 
