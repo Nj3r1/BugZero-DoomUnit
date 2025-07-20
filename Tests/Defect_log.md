@@ -1,369 +1,167 @@
-## 3.Defect Log Summary Table
+#DEFECTS
+---
+Title:"Edit" button in Admin Panel's Actions column is unresponsive.
 
-| Defect ID | Defect Title/Summary                                               | Feature               | Sub-Feature               | Severity | Priority | Status | Reported By            | Date Reported | 
-| :-------- | :------------------------------------------------------------------| :-------------------- | :------------------------ | :------- | :------- | :----- | :--------------------- | :------------ | 
-| BUG001    | User registration accepts weak passwords                           | User Authentication   | Registration              | Critical | P1       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG002    | Invalid email format is accepted during registration               | User Authentication   | Registration              | Critical | P1       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG003    | Filter by Status shows incorrect orders (pending shows missed)     | Admin Functions       | Request Filtering         | Critical | P1       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG004    | New registered users do not reflect on system dashboard            | User Management       | User Data Display         | Medium   | P2       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG005    | Logging out redirects to the request pickup page                   | User Authentication   | Logout                    | Medium   | P2       | New    | S. Ng’ang’a, T. Waweru | 2025-07-07    |           
-| BUG006    | After registration, user is not automatically logged in/redirected | User Authentication   | Registration Flow         | Medium   | P2       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG007    | Filter by Status shows incorrect orders (pending shows missed)     | Admin Functions       | Request Filtering         | Medium   | P2       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG008    | Filter by Location is not working as expected (shows wrong users)  | Admin Functions       | Request Filtering         | Medium   | P2       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG009    | Filter by Location is not working as expected (shows wrong users)  | Admin Functions       | Request Filtering         | Critical | P1       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG010    | Awareness page layout overlap / Page does not respond to click     | Content Features / UI | Page Display / Navigation | Low      | P3       | New    | Susan Ng’ang’a         | 2025-07-07    |           
-| BUG011    | Register tab is not highlighting on navigation                     | Usability / UI        | Navigation Highlighting   | Low      | P3       | New    | Susan Ng’ang’a         | 2025-07-07    |           
+Jira/GitHub (Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-43
 
+Requirement affected:This prevents administrators from modifying any data or settings for the corresponding items, severely impacting administrative control and data management.
 
+Severity:Critical
 
-
-
-
-
-4. Detailed Defect Descriptions
+Summary:On various administrative management pages, the "Edit" button located within the "Actions" column for individual entries is completely unresponsive when clicked.
 
 ---
-4.1. Defect ID: BUG001
-Defect Title: Accepts weak passwords
+Title: Admin filter combines incorrectly: Status filter is ignored when Location filter is applied simultaneously.
 
-Description: The user registration process allows users to create accounts with passwords that are considered weak, lacking proper complexity requirements. This poses a significant security risk.
+Jira/Github (Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-42
 
-Expected Behavior: The system should enforce strong password policies. It should reject passwords that do not meet predefined strength criteria and display specific, actionable error messages.
+Requirement affected:As a result, all requests from the specified location are displayed, regardless of their status, effectively ignoring the chosen status filter. This leads to inaccurate data presentation and hinders administrative efficiency.
 
-Actual Behavior: The system accepts weak passwords like "password123" during user registration. Subsequently, the user is successfully able to log in to the application using these insecure credentials.
+Severity:Major
 
-Steps to Reproduce:
-
-Navigate to the user Registration page.
-
-Enter valid details for the Email and Username fields.
-
-In the "Password" and "Confirm Password" fields, enter a weak password .
-
-Click the "Submit" or "Create Account" button to complete registration.
-
-Observe that the registration is accepted, and the user can then successfully log in with the weak password.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123
+Summary:When an administrator attempts to filter pickup requests by both a specific Status (e.g., "Pending") and a specific Location (e.g., "Eldoret") on the "Manage Requests" page, the system incorrectly prioritizes or exclusively applies the Location filter. 
 
 ---
+Title:"Contact Us" form submits successfully without internet connection (data loss)
 
-4.2. Defect ID: BUG002
-Defect Title: Invalid Email is accepted during registration
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-41
 
-Description: The registration form's email input field lacks proper validation for email format, allowing users to register with syntactically incorrect or malformed email addresses.
+Requirements affected:The "Contact Us" form incorrectly indicates a successful submission even when the device has no internet connection
 
-Expected Behavior: The registration process should strictly validate the email format. It should reject invalid email addresses with a clear error message.
+Severity:Major
 
-Actual Behavior: Registration is accepted even when an invalid email format is provided. No error message related to the email's format is displayed, and an account is created with the malformed email.
-
-Steps to Reproduce:
-
-Navigate to the user Registration page.
-
-Enter an invalid email address in the email field.
-
-Enter valid details for Username, Password, and Confirm Password.
-
-Click the "Submit" or "Create Account" button.
-
-Observe that registration is accepted without any email format validation error.
-
-Environment:
-
-OS: Windows 11, Windows 11 Pro
-
-Browser/Device: Chrome 120, Samsung A22, Redmi 13C
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123 
+Summary: leading to user data loss as the message never reaches the server.
 
 ---
+Title:User password change allows current password as new password.
 
-4.3. Defect ID: BUG003
-Defect Title: Filter by status does not respond correctly (shows missed orders with pending)
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-40
 
-Description: When an administrator attempts to filter pickup requests by "Pending" status, the system incorrectly displays "Missed" orders alongside the actual pending orders.
+Requirements affected:The "Change Password" feature allows users to set their new password to be identical to their current password without any validation
 
-Expected Behavior: The "Filter by Status" dropdown, when "Pending" is selected, should precisely filter the list to only display pickup orders that are currently in a "Pending" status.
+Severity:Minor
 
-Actual Behavior: When the "Filter by Status" dropdown is used and "Pending" is chosen, the displayed results include both orders with a "Pending" status and orders with a "Missed" status.
+Summary: This leads to a redundant and potentially confusing action.
 
-Steps to Reproduce:
+---
+Title:UI elements flicker briefly when navigating between authenticated pages.
 
-Navigate to the administrative section for managing pickup requests (e.g., Admin Dashboard > Manage Pickups).
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-39
 
-Locate the "Filter by Status" dropdown menu.
+Requirements affected:When a logged-in user navigates between different internal pages, there's a brief, noticeable flicker of UI elements
 
-Select "Pending" as the desired status from the dropdown.
+Severity:Cosmetic
 
-Click the "Filter" or "Apply Filter" button (if present).
+Summary:This suggests incomplete page loading or rendering issues.
 
-Observe the displayed list of orders; it will incorrectly contain orders with "Missed" status in addition to "Pending" ones.
+---
+Title:Awareness Page" images load slowly on mobile networks
 
-Environment:
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-38
 
-OS: Windows 11
+Requirements affected:The performance issue specifically impacts the loading of images and multimedia on this particular page.
 
-Browser/Device: Chrome 120, Samsung A22
+Severity:Major
 
-App Version: v2.5.0
+Summary:Images and multimedia content on the "Awareness Page" take an excessive amount of time to load when viewed on a simulated slow mobile network connection
 
-Test Data: User: user@cleancity.com / Password: password123 
+---
+Title:User cannot schedule a pickup for dates far in the future
+
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-37
+
+Requirements affected:The date picker for scheduling a pickup request is limited to a relatively short future range.
+
+Severity:Minor
+
+Summary: This prevents users from scheduling pickups for dates far in advance.
+
+---
+Title:Notification pop-up are not keyboard accessible.
+
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-36
+
+Requirements affected:This affects the usability and accessibility of the application wherever these specific notification pop-ups are displayed
+
+Severity:Minor
+
+Summary:Success or error notification pop-ups, while visible, cannot be navigated to or dismissed using only keyboard controls
+
+---
+Title:Admin login page allows brute-force attacks due to lack of lockout mechanism.
+
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-35
+
+Requirements affected:The entire integrity, confidentiality, and availability of the system, its data, and its users, all stemming from the vulnerability of the administrative login process.
+
+Severity:Critical
+
+Summary: An attacker can make an unlimited number of failed login attempts without any delay or account lockout, making it vulnerable to brute-force attacks
+
+---
+Title:Password field accepts special characters not allowed during registration.
+
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-34
+
+Requirements affected:The core issue lies within the input validation and character handling for the password field during the user registration process, which has cascading effects on user authentication, data integrity, and potential security posture of the application.
+
+Severity:Major
+
+Summary:The registration form's password field allows users to include certain special characters that are then not correctly processed upon login, leading to authentication failure.
 
 ---
 
-4.4. Defect ID: BUG004
-Defect Title: New Registered users do not reflect on system dashboard / User information not found after login
+Title:After registration page does not automatically log in.
 
-Description: After a new user successfully registers and subsequently logs into the system, their personal information or any user-specific data is not accessible or visible on their dashboard or profile pages.
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-33
 
-Expected Behavior: When a new user is registered and successfully logs in, they should be able to access and view their own personalized information, profile details, and any data relevant to their account on the system dashboard.
+Requirements affected:The primary affected areas are the Registration and User Authentication modules, specifically the post-registration workflow and session management.
 
-Actual Behavior: Upon successful registration and login, the user is unable to find or access their own information on the system dashboard or their personal profile section.
+Severity:Critical
 
-Steps to Reproduce:
-
-Navigate to the user Login page.
-
-Register a new user account with valid credentials.
-
-Log in to the application using the newly created user account.
-
-Navigate to the user dashboard or profile page.
-
-Observe that the user's information (e.g., username, email, scheduled pickups) is not displayed or accessible.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123
+Summary:Upon successful completion of the user registration process, the CleanCity application displays a "Registration Successful" message. However, the system fails to automatically log in the newly created user or redirect them to their personalized dashboard or the application's home page
 
 ---
 
-4.5. Defect ID: BUG005
-Defect Title: Logging out leads to the request pickup page instead of login page
+Title:Logging out leads you to the request pickup page.
 
-Description: When a user performs the logout action, they are incorrectly redirected to the "Request Pickup" scheduler page, which is typically an authenticated page, instead of the expected login page or application homepage.
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-32
 
-Expected Behavior: Upon successful logout, the user should be redirected to the application's login page, the public homepage, or a dedicated logout confirmation page, clearly indicating that their session has been terminated and they are no longer logged in.
+Requirements affected:The most directly affected areas are the logout process itself, the application's routing mechanism, and potentially the session management.
 
-Actual Behavior: After clicking the "Logout" button, the system displays the "Request Pickup" scheduler page. This behavior is unexpected and might imply the session is not fully terminated or exposes an authenticated page to a logged-out user.
+Severity:Medium
 
-Steps to Reproduce:
-
-Navigate to any page where the user is currently logged in .
-
-Locate and click the "Logout" button or link.
-
-Observe the page that is displayed immediately after clicking "Logout"; it will be the "Pickup Scheduler" page.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123
+Summary:This behavior is contrary to standard web application logout practices and presents a potential security or usability concern. The "Request Pickup" page is typically intended for logged-in users, and displaying it after logout may imply that the session has not been fully terminated or could expose sensitive information if not handled correctly.
 
 ---
+Title:New Registered users do not reflect on system dashboard.
 
-4.6. Defect ID: BUG006
-Defect Title: After registration, page does not automatically log in or redirect to dashboard
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-31
 
-Description: Following a successful user registration, the system displays a "Registration Successful" message, but it fails to automatically log in the newly created user or redirect them to their personalized dashboard/home page. The user remains on the registration page.
+Requirements affected:The core problem is a disconnect between the successful registration of a new user and the dashboard's ability to accurately retrieve and display that new user's information.
 
-Expected Behavior: Upon successful account creation, the system should either automatically log in the user and redirect them to their dashboard, or redirect them to the login page with a clear success message, prompting them to log in manually.
+Severity:Critical
 
-Actual Behavior: After completing the registration form and clicking "Create Account," a "Registration Successful" message appears, but the browser remains on the registration page. The user is not automatically logged in or redirected.
-
-Steps to Reproduce:
-
-Navigate to the user Registration page.
-
-Key in all required valid details (Email, Username, Password, Confirm Password).
-
-Click on the "Create Account" button.
-
-Observe that a "Registration Successful" message is displayed, but the page does not navigate away; it remains on the registration page.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123
+Summary:This includes basic profile details like username or email, and any user-specific data that would typically populate a personalized dashboard. The dashboard appears blank or generic, failing to reflect the logged-in user's data. This prevents users from accessing their own account-related information and functionalities immediately after joining and logging in
 
 ---
+Title:Misleading error message when attempting to register with an already registered email.
 
-4.7. Defect ID: BUG007
-Defect Title: Filter by status does not respond correctly (shows missed orders with pending)
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-30
 
-Description: When an administrator attempts to filter pickup requests by "Pending" status, the system incorrectly displays "Missed" orders alongside the actual pending orders. This leads to inaccurate data representation and potential confusion for administrators.
+Requirements affected:This directly impacts the system's ability to communicate effectively with its users during a critical interaction (registration), hindering their ability to successfully complete the process.
 
-Expected Behavior: The "Filter by Status" dropdown, when "Pending" is selected, should precisely filter the list to only display pickup orders that are currently in a "Pending" status.
+Severity:Minor
 
-Actual Behavior: When the "Filter by Status" dropdown is used and "Pending" is chosen, the displayed results include both orders with a "Pending" status and orders with a "Missed" status.
-
-Steps to Reproduce:
-
-Navigate to the administrative section for managing pickup requests .
-
-Locate the "Filter by Status" dropdown menu.
-
-Select "Pending" as the desired status from the dropdown.
-
-Click the "Filter" or "Apply Filter" button (if present).
-
-Observe the displayed list of orders; it will incorrectly contain orders with "Missed" status in addition to "Pending" ones.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123 
+Summary:When a user attempts to register with an email address that is already associated with an existing account, the error message provided is generic  instead of specific ("Email already registered") 
 
 ---
+Title:Login Here button on the home page does not respond.
 
-4.8. Defect ID: BUG008
-Defect Title: ‘Filter by Location’ is not working as expected 
+Jira/Github(Bug) Link:https://zetech-team.atlassian.net/browse/CLEANCITY-29
 
-Description: The "Filter by Location" functionality within the request management section  is not operating as intended. When a specific location is selected as a filter, the system incorrectly displays users or requests that originate from other, non-selected locations.
+Requirements affected:This directly impacts the fundamental ability of the user to initiate the login process, which is a core functional requirement.
 
-Expected Behavior: When filtering requests by a specific location ,the system should only display requests or users who have registered or made requests from that exact, specified location.
+Severity:Critical
 
-Actual Behavior: When the "Filter By Location" dropdown is used to select a location , the filtered results include users or requests that are registered under or originate from other, incorrect locations.
-
-Steps to Reproduce:
-
-Navigate to the "Filter Requests" section .
-
-Locate the "Filter By Location" dropdown and choose "Eldoret."
-
-Optionally, apply additional filters such as "Filter by status" (e.g., "all status," "pending," "scheduled," "completed," and "missed").
-
-Observe the displayed list of users/requests; it will incorrectly contain entries from locations other than Eldoret.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123 
-
----
-
-4.9. Defect ID: BUG009
-Defect Title: ‘Filter by Location’ is not working as expected (displays users from other locations)
-
-Description: The "Filter by Location" functionality within the request management section  is not operating as intended. When a specific location  is selected as a filter, the system incorrectly displays users or requests that originate from other, non-selected locations.
-
-Expected Behavior: When filtering requests by a specific location , the system should only display requests or users who have registered or made requests from that exact, specified location.
-
-Actual Behavior: When the "Filter By Location" dropdown is used to select a location ,the filtered results include users or requests that are registered under or originate from other, incorrect locations.
-
-Steps to Reproduce:
-
-Navigate to the "Filter Requests" section
-
-Locate the "Filter By Location" dropdown and choose "Eldoret."
-
-Optionally, apply additional filters such as "Filter by status" (e.g., "all status," "pending," "scheduled," "completed," and "missed").
-
-Observe the displayed list of users/requests; it will incorrectly contain entries from locations other than Eldoret.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123 
-
----
-
-4.10. Defect ID: BUG010
-Defect Title: Awareness page layout overlap / Page does not respond to click
-
-Description: The "Awareness" page exhibits significant layout issues, with various content elements overlapping each other, making the page unreadable or visually unappealing. Furthermore, interactive elements or the page itself does not respond to user clicks, effectively rendering the page unusable.
-
-Expected Behavior: The "Awareness" page should display content with a correct and clean layout, ensuring no elements overlap and all content is clearly visible and readable. All interactive elements within the page should respond correctly to user clicks, and the page should allow for proper navigation and interaction.
-
-Actual Behavior: Upon navigating to the "Awareness" page, its layout is visually incorrect due to overlapping elements. Additionally, clicking anywhere on the page does not trigger any response, and the user remains stuck on the homepage, unable to access the Awareness content or functionality.
-
-Steps to Reproduce:
-
-Navigate to the "Awareness" page 
-
-Observe the page layout for any overlapping content or elements.
-
-Attempt to click on various parts of the page, including any supposed interactive elements.
-
-Observe that the page does not respond to clicks, and the user remains on the homepage.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123
-
----
-
-4.11. Defect ID: BUG011
-Defect Title: Register Tabs are not highlighting
-
-Description: When the user navigates to the "Register" page, the corresponding "Register" navigation tab or button in the application's header/menu does not visually highlight to indicate that it is the currently active page. Instead, the "Home" button/tab remains highlighted, leading to user confusion about their current location within the application.
-
-Expected Behavior: When the user is on the "Register" page, the "Register" navigation tab/button should be visually highlighted to clearly indicate that it is the active page.
-
-Actual Behavior: Upon navigating to the "Registration" page, the "Register" navigation element does not highlight. Instead, the "Home" button/tab continues to display as highlighted, providing incorrect visual feedback to the user.
-
-Steps to Reproduce:
-
-Navigate to the application's homepage.
-
-Click on the "Register" link or button in the navigation menu.
-
-Observe the navigation bar/menu; the "Register" tab is not highlighted, while the "Home" tab remains highlighted.
-
-Environment:
-
-OS: Windows 11
-
-Browser/Device: Chrome 120, Samsung A22
-
-App Version: v2.5.0
-
-Test Data: User: user@cleancity.com / Password: password123
+Summary:On the CleanCity application's home page, the "Login Here" button, intended to redirect users to the login screen, is completely unresponsive when clicked. This prevents users from accessing the login functionality and subsequently, the application itself.
