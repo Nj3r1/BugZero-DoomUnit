@@ -1,4 +1,4 @@
-#DEFECTS
+DEFECTS
 ---
 Title:"Edit" button in Admin Panel's Actions column is unresponsive.
 
