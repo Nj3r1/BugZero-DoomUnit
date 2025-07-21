@@ -77,7 +77,7 @@ Best Practices & SEO: Generally good scores, indicating adherence to modern web 
 
 ---
 
-📂 Defect Log Summary
+**📂 Defect Log Summary**
 Defect ID: D-001
 Title: Inconsistent App URL Handling
 
@@ -95,7 +95,8 @@ Logged By: Antony Manyenze
 Date: July 21, 2025
 
 ---
-🔚 Final Notes
+**🔚 Final Notes**
+
 Jest tests confirm the functional readiness of individual components and integrated flows.
 
 Lighthouse audit provides valuable insights into performance bottlenecks (especially image loading) and accessibility gaps, which are crucial for user experience.
