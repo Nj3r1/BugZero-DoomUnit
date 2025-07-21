@@ -78,6 +78,7 @@ Best Practices & SEO: Generally good scores, indicating adherence to modern web 
 ---
 
 **📂 Defect Log Summary**
+
 Defect ID: D-001
 Title: Inconsistent App URL Handling
 
