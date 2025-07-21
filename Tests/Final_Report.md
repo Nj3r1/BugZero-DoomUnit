@@ -1,4 +1,5 @@
 🧪 CleanCity QA Final Test Report
+---
 📋 Project Summary
 
 Application Name: CleanCity – Waste Pickup Scheduler<br>
@@ -12,6 +13,7 @@ Objective:
 Ensure functional integrity, usability, accessibility, and performance of the CleanCity web application, including registration, scheduling, administrative functions, content management, Authentication system, community features, dashboard interaction, and navigation flows.
 
 ### ✅ Test Coverage Overview
+
 | Feature                          | Status    Functional Req. | Notes                                                 |
 | ---------------------------------| ---------| --------------  -------------------------------------------------------|
 | Home Page Load                   | ✅ Pass | FR-01          | Loaded correctly via React script.                     |
