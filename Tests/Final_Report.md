@@ -46,6 +46,7 @@ Verifies component rendering, state updates, and successful data submission (moc
 
 Focuses on unit and integration level testing for fast feedback during development.
 
+
 Execution Result:
 
 All Jest tests passed successfully with rapid execution times.
@@ -54,7 +55,9 @@ Confirmed component-level functional integrity across key features.
 ---
 
 Lighthouse Performance & Accessibility Audit
+
 Audit Scope: Homepage, Login Page, Dashboard, Awareness Page (mobile simulation)
+
 
 Description:
 
@@ -62,11 +65,13 @@ Lighthouse was used to audit key pages for performance, accessibility, best prac
 
 Audits were run simulating mobile network conditions to identify real-world user experience issues.
 
+
 Audit Results Summary:
 
 Performance: Overall score was moderate. Noted slow image loading on the "Awareness Page" and a slight delay in form response, particularly on simulated mobile networks, indicating potential optimization needs for asset delivery and initial render.
 
 Accessibility: Identified some areas for improvement, particularly regarding keyboard accessibility for notification pop-ups and sufficient color contrast on certain UI elements.
+
 
 Best Practices & SEO: Generally good scores, indicating adherence to modern web standards.
 
