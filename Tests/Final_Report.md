@@ -26,8 +26,9 @@ Ensure functional integrity, usability, accessibility, and performance of the Cl
 | Feedback Page       | ✅ Pass | FR-09          | Navigation functional.                            |
 | Logout Functionality | ✅ Pass | FR-10          | Session terminated and returned to login page.    |
 | Admin pickup request modification| Fail | FR-055 | There is no user interface available to modify requests|
-|
 
+
+---
 🧪 Automated Testing with Jest & Lighthouse
 ---
 Tools Used: Jest, React Testing Library, Lighthouse, Visual Studio Code, Git, GitHub
