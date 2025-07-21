@@ -1,4 +1,4 @@
-# Testcases.md
+# Testcases
 
 | Test Case ID | Feature | Test Scenario | Steps to Reproduce | Expected Result | Actual Result |
 |---|---|---|---|---|---|
