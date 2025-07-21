@@ -1,12 +1,12 @@
-🧪 CleanCity QA Final Test Report
+## 🧪 CleanCity QA Final Test Report
 ---
-📋 Project Summary
+### 📋 Project Summary
 
-Application Name: CleanCity – Waste Pickup Scheduler<br>
+**Application Name**: CleanCity – Waste Pickup Scheduler<br>
 
-Testing Period: July 10 – July 21, 2025 <br>
+**Testing Period**: July 10 – July 21, 2025 <br>
 
-Tested By: Antony Manyenze, Susan Ng'ang'a, Teresiah Waweru
+**Tested By**: Antony Manyenze, Susan Ng'ang'a, Teresiah Waweru
 
 **Objective:**
 
@@ -29,7 +29,7 @@ Ensure functional integrity, usability, accessibility, and performance of the Cl
 
 
 ---
-🧪 Automated Testing with Jest & Lighthouse
+### 🧪 Automated Testing with Jest & Lighthouse
 ---
 Tools Used: Jest, React Testing Library, Lighthouse, Visual Studio Code, Git, GitHub
 
@@ -77,7 +77,7 @@ Best Practices & SEO: Generally good scores, indicating adherence to modern web 
 
 ---
 
-**📂 Defect Log Summary**
+### 📂 Defect Log Summary
 
 Defect ID: D-001
 Title: Inconsistent App URL Handling
