@@ -11,22 +11,22 @@ Tested By: Antony Manyenze, Susan Ng'ang'a, Teresiah Waweru
 Objective:
 
 Ensure functional integrity, usability, accessibility, and performance of the CleanCity web application, including registration, scheduling, administrative functions, content management, Authentication system, community features, dashboard interaction, and navigation flows.
-
+---
 ### ✅ Test Coverage Overview
-
-| Feature                          | Status    Functional Req. | Notes                                                 |
-| ---------------------------------| ---------| --------------  -------------------------------------------------------|
-| Home Page Load                   | ✅ Pass | FR-01          | Loaded correctly via React script.                     |
-| User Registration                | ✅ Pass | FR-02          | Valid credentials used.                                |
-| Schedule Pickup Form             | ✅ Pass | FR-03          | Dropdowns, text fields, and submit button tested.      |
-| Login                            | ✅ Pass | FR-04          | Credentials verified after registration.               |
-| Dashboard Navigation             | ✅ Pass | FR-05          | Reached successfully post-login.                       |
-| Blog Access                      | ✅ Pass | FR-06          | Navigation functional.                                 |
-| Community Page                   | ✅ Pass | FR-07          | Navigation functional.                                 |
-| Awareness Page                   | ✅ Pass | FR-08          | Navigation functional.                                 |
-| Feedback Page                    | ✅ Pass | FR-09          | Navigation functional.                                 |
-| Logout Functionality             | ✅ Pass | FR-10          | Session terminated and returned to login page.         |
-| Admin pickup request modification| Fail     | FR-055         | There is no user interface available to modify requests|
+| Feature              | Status | Functional Req. | Notes                                             |
+| -------------------- | ------ | -------------- | ------------------------------------------------- |
+| Home Page Load       | ✅ Pass | FR-01       | Loaded correctly via React script.                |
+| User Registration    | ✅ Pass | FR-02          | Valid credentials used.                           |
+| Schedule Pickup Form | ✅ Pass | FR-03          | Dropdowns, text fields, and submit button tested. |
+| Login                | ✅ Pass | FR-04          | Credentials verified after registration.          |
+| Dashboard Navigation | ✅ Pass | FR-05          | Reached successfully post-login.                  |
+| Blog Access         | ✅ Pass | FR-06          | Navigation functional.                            |
+| Community Page      | ✅ Pass | FR-07          | Navigation functional.                            |
+| Awareness Page      | ✅ Pass | FR-08          | Navigation functional.                            |
+| Feedback Page       | ✅ Pass | FR-09          | Navigation functional.                            |
+| Logout Functionality | ✅ Pass | FR-10          | Session terminated and returned to login page.    |
+| Admin pickup request modification| Fail | FR-055 | There is no user interface available to modify requests|
+|
 
 🧪 Automated Testing with Jest & Lighthouse
 ---
