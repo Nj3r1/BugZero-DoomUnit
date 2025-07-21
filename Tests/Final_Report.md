@@ -8,10 +8,10 @@ Testing Period: July 10 – July 21, 2025 <br>
 
 Tested By: Antony Manyenze, Susan Ng'ang'a, Teresiah Waweru
 
-Objective:
+**Objective:**
 
 Ensure functional integrity, usability, accessibility, and performance of the CleanCity web application, including registration, scheduling, administrative functions, content management, Authentication system, community features, dashboard interaction, and navigation flows.
----
+
 ### ✅ Test Coverage Overview
 | Feature              | Status | Functional Req. | Notes                                             |
 | -------------------- | ------ | -------------- | ------------------------------------------------- |
